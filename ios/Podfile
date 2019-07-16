@@ -1,0 +1,35 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'nba' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for nba
+
+  target 'nba-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+  end
+
+  target 'nbaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'nba-tvOS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for nba-tvOS
+
+  target 'nba-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
